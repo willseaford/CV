@@ -1,0 +1,47 @@
+\section*{\color{Maroon}Work Experience}
+\hrule \smallskip
+\noindent
+\begin{flushleft}
+\begin{tabular}{r|l}
+\indent April 2018 - \textit{Present} & \textbf{Java Developer} \\
+\indent & {\large{goHenry, London}} \\
+\end{tabular}
+\end{flushleft}
+Worked in a small team tasked with migrating the existing PHP codebase into Java Spring Boot microservices. Was tasked with implementing an authentication \& authorisation service using Spring Security OAuth, which made use of Spring Data alongside a MySql database to return a JWT token. \newline
+
+Work on the related gateway service includes using Zuul to restrict access to non-business services and making use of the JWTAccessTokenConverter to provide bidirectional conversion of a JWT token between the new Spring microservices and PHP legacy created tokens. Additionally I created a custom actuator to asynchronously check the health status of every service-registered microservice.\newline
+
+Within the transaction statement service I made use of Hibernate's AttributeConverter to ease integration of existing legacy databases with the Spring microservice. This was coupled with implementing read-only entities and mapping them to mutable object counterparts to mitigate Hibernate's automatic state detection when transforming its state. Finally I implemented a wrapper object for the service endpoints filtering arguments to protect the service against null values. Was also tasked to provide a proof of concept for both Swagger and Spring Rest Docs API documentation tools to show to the rest of the team and give a recommendation.\newline
+
+I have also transformed existing microservices such as the Statement service and the User service to become more object-oriented, taking advantage of JPA inheritance to discriminate between different object types stored in the database tables. I also employed Feign to call the User service from the Statement service and retrieve a user for authorization purposes. \newline  
+
+Took full ownership of developing a microservice to intake the results of a customer's Net Promoter Score and store it within a normalised database. \newline
+
+Worked in an agile environment consisting of 2 week sprints with each increment producing a potentially shippable product by the end. All code was produced with 100\% JaCoCo test coverage with unit tests, contract tests using variations of Spring’s RestTemplate, database integration tests using H2 and MySQL as well as mockMvc tests for rest endpoints and container tests for testing within a docker container.\newline
+ 
+\smallskip
+\begin{flushleft}
+\begin{tabular}{r|l}
+\indent March 2016 - \textit{February 2018} & \textbf{Consultant} \\
+\indent & {\large{QA Consulting, Manchester}} \\
+\end{tabular}
+\end{flushleft}
+
+Carried out work as a sub-contractor at HM Revenue \& Customs in a team to develop a new content management system for fraud prevention which interacts with different project endpoints, irrespective of repository. \newline
+
+This was comprised of several different REST microservices within Spring Boot which made for a composite system to ingest, retrieve and search content. This was built using test driven development and adhered to an industry production standard. \newline \newline
+    Main contribution to the project was creating a custom deserialiser using the Jackson API and implementing Spring Sleuth. Also responsible for implementing an exception mapper to catch specific exceptions relevant to the project. \newline
+    
+     On rotation I was a Java tester. I made use of jUnit, Cucumber (Gherkin) to create the feature files, Selenium for automated testing of UI elements, Mockito to mock behaviours when reliant on other files and 	Rest-Assured for automated testing of REST services. This made use of behavior driven development and end-to-end testing of services, as opposed to software developments test driven development which test individual code segments.
+   	Also exercised skills in Jenkins creating jobs to build or deploy projects.\newline \newline
+   	All work was conducted in an agile scrum environment which consisted of a series of eight 2 week sprints. These included joining in sprint planning to form stories, input ability to complete work committed to and forming the next 2 week sprint periods, daily stand-ups where daily progress is shared with the team \& sprint reviews and retrospectives which looked at the work completed and how the next sprint could be achieved better.\newline
+
+\begin{flushleft}
+\begin{tabular}{r|l}
+\indent January 2015 - April 2015 & \textbf{Teaching Assistant} \\
+\indent & {\large{Brampton Manor Academy}} \\
+\indent & East Ham
+\end{tabular}
+\end{flushleft}
+
+\noindent Assigned a 10 week placement for a university module working with a year 8 class. Duties included assisting the teacher in aiding learning to pupils and answering any technical questions students have relating towards curriculum and beyond. Given control of the classroom for 20 minutes each week to teach material derived from own lesson plan with highly positive feedback and thorough enjoyment from all students. Demonstrated excellent aptitude for teaching. \newline
